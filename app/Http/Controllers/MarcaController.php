@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreMarcaRequest;
 use App\Http\Resources\MarcaCollection;
 use App\Models\Marca;
-use Illuminate\Http\Request;
 use Inertia\Inertia;
 use Illuminate\Support\Facades\Redirect;
 
@@ -42,12 +41,8 @@ class MarcaController extends Controller
      */
     public function store(StoreMarcaRequest $request)
     {
-        $request->validate([
-            'nombre' => 'required',
-            'referencia' => 'required'
-        ]);
-
         Marca::create($request->all());
+
         return Redirect::route('marcas.index');
     }
 

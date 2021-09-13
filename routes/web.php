@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\MarcaController;
+use App\Http\Controllers\ProductoController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -31,4 +32,5 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 
 Route::middleware(['auth:sanctum', 'verified'])->group(function(){
     Route::resource('marcas', MarcaController::class);
+    Route::resource('productos', ProductoController::class);
 });

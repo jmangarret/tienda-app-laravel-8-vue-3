@@ -1,3 +1,68 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+.custom-th {
+    @apply px-6 py-3 text-left text-xs font-medium text-gray-100 uppercase tracking-wider;
+}
+.custom-table {
+    @apply rounded-t-lg mt-5 min-w-full mx-auto bg-gray-800 text-gray-100;
+}
+.custom-tbody {
+    @apply bg-gray-700 border-b border-gray-600 text-gray-200;
+}
+.custom-btn {
+    @apply flex-shrink-0
+    text-white text-base
+    font-semibold
+    py-2
+    px-4
+    rounded-lg
+    shadow-md
+    focus:outline-none
+    focus:ring-2
+    focus:ring-offset-2;
+}
+.pink {
+    @apply
+    bg-pink-500
+    hover:bg-pink-700
+    focus:ring-pink-500
+    focus:ring-offset-pink-200;
+}
+.purple {
+    @apply
+    bg-purple-600
+    focus:ring-purple-500
+    focus:ring-offset-purple-200
+}
+.blue {
+    @apply
+    bg-blue-500
+    hover:bg-blue-700
+    focus:ring-blue-500
+    focus:ring-offset-blue-200
+}
+.gray {
+    @apply
+    hover:bg-gray-700
+    bg-gray-500
+}
+.custom-label {
+    @apply
+    uppercase
+    md:text-sm
+    text-xs text-gray-500
+    font-semibold
+}
+.custom-input {
+    @apply
+    py-2
+    px-3
+    rounded-lg
+    border-2 border-purple-300
+    mt-1
+    focus:outline-none
+    focus:ring-2 focus:ring-purple-600
+    focus:border-transparent
+}
