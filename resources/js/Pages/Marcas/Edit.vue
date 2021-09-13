@@ -25,6 +25,7 @@
                   type="text"
                   placeholder="Descripción"
                 />
+                <div class="bg-red-100 text-red-700" v-if="errors">{{ errors.nombre }}</div>
               </div>
               <div class="grid grid-cols-1">
                 <label
@@ -38,6 +39,7 @@
                   type="text"
                   placeholder="referencia"
                 />
+                <div class="bg-red-100 text-red-700" v-if="errors">{{ errors.referencia }}</div>
               </div>
             </div>
 

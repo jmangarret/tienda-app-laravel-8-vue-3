@@ -25,7 +25,7 @@
                   type="text"
                   placeholder="Nombre de la Marca"
                 />
-                <div v-if="errors">{{ errors.nombre }}</div>
+                <div class="bg-red-100 text-red-700" v-if="errors">{{ errors.nombre }}</div>
               </div>
               <div class="grid grid-cols-1">
                 <label
@@ -39,7 +39,7 @@
                   type="text"
                   placeholder="Referencia"
                 />
-                <div v-if="errors">{{ errors.referencia }}</div>
+                <div class="bg-red-100 text-red-700" v-if="errors">{{ errors.referencia }}</div>
               </div>
             </div>
 
